@@ -1,0 +1,8 @@
+.profile-pic {
+  width: 50vw;
+}
+
+ul {
+  list-style-type: none; /* removes bullet points */
+  padding-left: 20px;
+}

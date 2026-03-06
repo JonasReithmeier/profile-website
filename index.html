@@ -1,0 +1,78 @@
+<!-- html language is NOT upper/lower case sensitive -->
+<!--css code can be directly integrated into html code inside of <style> </(style>, but for segmentation it should NOT be done
+ instead create seperate css file with -->
+<!doctype html>
+<!-- to tell the browser that this is and html document -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!--necessary to display e.g. ö,ä,ü correctly-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Essential for mobile-friendly sites -->
+    <title>Jonas Reithmeier</title>
+    <link rel="icon" type="image/jpeg" href="assets/icons/head.jpeg" />
+    <!--keine website inhalt sondern der website icon => handling mit link, nicht img-->
+
+    <!-- linking html to css file -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!--all metadata is supposed to be in the header. Here to avoid website rendering before the css file has been read-->
+  </head>
+  <body>
+    <header>
+      <!-- Logo und Titel könnten hier rein -->
+    </header>
+
+    <main>
+      <section id="hero">
+        <img
+          src="assets/images/CloseUpLinkedInJonasR.jpg"
+          class="profile-pic"
+        />
+        <h1>Hey, my name is Jonas Reithmeier.</h1>
+        <p>I am a <span>physics student</span> based in Munich, Germany.</p>
+      </section>
+
+      <section id="contact">
+        <h2>Reach out to me:</h2>
+        <ul>
+          <li>
+            <a href="https://linkedin.com/in/jonas-reithmeier" target="_blank"
+              >LinkedIn</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/JonasReithmeier" target="_blank"
+              >GitHub</a
+            >
+          </li>
+          <li>
+            <a href="mailto:jonasreithmeier@outlook.de">Email</a>
+          </li>
+        </ul>
+      </section>
+
+      <section id="about me"></section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Jonas Reithmeier.</p>
+      <section id="footer contact">
+        <ul>
+          <li>
+            <a href="https://linkedin.com/in/jonas-reithmeier" target="_blank"
+              >LinkedIn</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/JonasReithmeier" target="_blank"
+              >GitHub</a
+            >
+          </li>
+          <li>
+            <a href="mailto:jonasreithmeier@outlook.de">Email</a>
+          </li>
+        </ul>
+      </section>
+    </footer>
+  </body>
+</html>
