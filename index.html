@@ -1,12 +1,7 @@
-<!-- html language is NOT upper/lower case sensitive -->
-<!--css code can be directly integrated into html code inside of <style> </(style>, but for segmentation it should NOT be done (at least in the past)
- instead create seperate css file with/ modern performance integration tnto html file with astro -->
 <!doctype html>
-<!-- to tell the browser that this is and html document -->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!--necessary to display e.g. ö,ä,ü correctly-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Essential for mobile-friendly sites -->
     <title>Jonas Reithmeier</title>
@@ -15,64 +10,45 @@
 
     <!-- linking html to css file -->
     <link rel="stylesheet" href="css/styles.css" />
-    <!--all metadata is supposed to be in the header. Here to avoid website rendering before the css file has been read-->
   </head>
   <body>
-    <header>
-      <!-- Logo und Titel könnten hier rein, oder navbar -->
-    </header>
-
     <main>
       <section id="hero">
-        <img
-          src="assets/images/CloseUpLinkedInJonasR.jpg"
-          class="profile-pic"
-        />
-        <h1>Hey, my name is Jonas Reithmeier.</h1>
-        <p>I am a <span>physics student</span> based in Munich, Germany.</p>
+        <div>
+          <img
+            src="assets/images/CloseUpLinkedInJonasR.jpg"
+            class="profile-pic"
+          />
+          <h1>Hey, my name is Jonas Reithmeier.</h1>
+          <p>I am a <span>physics student</span> based in Munich, Germany.</p>
+        </div>
       </section>
 
       <section id="contact">
-        <h2>Reach out to me:</h2>
-        <ul>
-          <li>
-            <a href="https://linkedin.com/in/jonas-reithmeier" target="_blank"
-              >LinkedIn</a
-            >
-          </li>
-          <li>
-            <a href="https://github.com/JonasReithmeier" target="_blank"
-              >GitHub</a
-            >
-          </li>
-          <li>
-            <a href="mailto:jonasreithmeier@outlook.de">Email</a>
-          </li>
-        </ul>
-      </section>
+        <!-- Geschützte Links (wie zuvor) -->
+        <div class="contact-area">
+          <a
+            href="#"
+            class="protected-link"
+            data-type="email"
+            data-encoded="am9uYXNyZWl0aG1laWVyQG91dGxvb2suZGU="
+          >
+            <svg class="icon"><use href="#icon-email"></use></svg>
+            <span class="label">Contact data hidden</span>
+          </a>
+        </div>
 
-      <section id="about me"></section>
+        <!-- Das DIY-Captcha UI -->
+        <div id="captcha-box" class="captcha-container">
+          <p id="captcha-status">Security check required</p>
+          <div class="progress-bar"><div id="progress-fill"></div></div>
+          <button id="start-captcha">
+            Click here to start friendly captcha
+          </button>
+        </div>
+
+        <script src="js/captcha.js" defer></script>
+      </section>
     </main>
-
-    <footer>
-      <p>&copy; 2026 Jonas Reithmeier.</p>
-      <section id="footer contact">
-        <ul>
-          <li>
-            <a href="https://linkedin.com/in/jonas-reithmeier" target="_blank"
-              >LinkedIn</a
-            >
-          </li>
-          <li>
-            <a href="https://github.com/JonasReithmeier" target="_blank"
-              >GitHub</a
-            >
-          </li>
-          <li>
-            <a href="mailto:jonasreithmeier@outlook.de">Email</a>
-          </li>
-        </ul>
-      </section>
-    </footer>
   </body>
 </html>

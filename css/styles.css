@@ -6,3 +6,72 @@ ul {
   list-style-type: none; /* removes bullet points */
   padding-left: 20px;
 }
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+  background-color: var(--accent-dark); /* Aus deinem analysierten Snippet */
+  color: var(--text-color);
+}
+
+.footer-socials {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.social-icon {
+  width: 1.5rem; /* Größe über CSS steuern */
+  height: 1.5rem;
+  color: var(--accent); /* Farbe annehmen */
+  transition: transform 0.3s ease; /* Kleiner Animationseffekt */
+}
+
+.social-icon:hover {
+  transform: scale(1.2); /* Vergrößert sich leicht beim Drüberfahren */
+  color: var(--accent-light);
+}
+
+/* captcha */
+.captcha-container {
+  border: 1px solid var(--accent);
+  padding: 1.5rem;
+  border-radius: 8px;
+  background: rgba(var(--accent-dark-rgb), 0.1);
+  max-width: 350px;
+  margin: 2rem auto;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 4px;
+  background: var(--gray-dark);
+  margin: 1rem 0;
+  overflow: hidden;
+}
+
+#progress-fill {
+  width: 0%;
+  height: 100%;
+  background: var(--accent);
+  transition: width 0.2s ease;
+}
+
+button#start-pow {
+  background: var(--accent);
+  color: var(--background-color);
+  border: none;
+  padding: 0.8rem 1.2rem;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
+}
+
+button#start-pow:disabled {
+  background: var(--gray);
+  cursor: wait;
+}
+
+/* captcha ende*/
